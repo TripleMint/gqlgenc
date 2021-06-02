@@ -137,6 +137,11 @@ func (d *Decoder) decode() error {
 						someFieldExist = true
 					}
 				}
+
+				if v.Kind() == reflect.Map {
+					someFieldExist = true
+				}
+
 				d.vs[i] = append(d.vs[i], f)
 			}
 			if !someFieldExist {
