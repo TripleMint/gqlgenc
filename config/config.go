@@ -13,7 +13,7 @@ import (
 	"github.com/99designs/gqlgen/codegen/config"
 	"github.com/TripleMint/gqlgenc/client"
 	"github.com/TripleMint/gqlgenc/introspection"
-	"github.com/vektah/gqlparser/v2"
+	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 	"github.com/vektah/gqlparser/v2/validator"
 	yaml "gopkg.in/yaml.v2"
